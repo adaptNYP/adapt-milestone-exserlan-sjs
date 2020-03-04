@@ -1,0 +1,73 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties":{
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "both",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text",
+      "translatable": true
+    },
+    "_surveyJS": {
+      "type": "string",
+      "required": false,
+	  "title": "SurveyJS postID",
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "Input your EXSERLAN surveyJS database postID",
+      "translatable": true
+    },	
+	"_qnNumber": {
+      "type": "string",
+      "required": false,
+	  "title": "SurveyJS question number",
+      "default": "",
+	  "inputType": {"type": "Select", "options": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]},
+	  "validators": [],
+      "help": "Choose your question number for EXSERLAN here.",
+      "translatable": true
+    },	
+	"_qnPart": {
+       "type": "string",
+      "required": false,
+	  "title": "SurveyJS question part",
+      "default": "",
+	  "inputType": {"type": "Select", "options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]},
+	  "validators": [],
+      "help": "Choose your question part for EXSERLAN here.",
+      "translatable": true
+    },		
+    "confirmationLabel": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the label for input checkbox",
+      "translatable": true
+    }
+  }
+}

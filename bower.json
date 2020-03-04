@@ -1,0 +1,15 @@
+{
+  "name": "adapt-milestone-exserlan-sjs",
+  "version": "1.0.0",
+  "framework": ">=5",
+  "homepage": "https://github.com/adaptNYP/adapt-milestone-exserlan-sjs",
+  "displayName" : "Milestone EXSERLAN SJS",
+  "component" : "Milestone EXSERLAN SJS",
+  "description": "Milestone EXSERLAN SJS component",
+  "main": "/js/adapt-milestone-exserlan-sjs.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3"
+}
